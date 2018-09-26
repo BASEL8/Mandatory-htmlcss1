@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans|Notable|Roboto|Noto+Serif+JP');
-*, *::after, *::before {
+
+*,
+*::after,
+*::before {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -10,6 +13,7 @@ body {
   text-align: center;
   color: white;
   font-family: 'Open Sans', sans-serif;
+  background-color: black,
 }
 
 #main {
@@ -308,13 +312,17 @@ index html*/
   border-spacing: 0px 10px;
 }
 
-#main #movies td, #main #movies th {
+#main #movies td,
+#main #movies th {
   text-align: left;
   height: 40px;
   position: relative;
 }
 
-#main #movies td span:first-of-type, #main #movies th span:first-of-type, #main #movies td span:last-of-type, #main #movies th span:last-of-type {
+#main #movies td span:first-of-type,
+#main #movies th span:first-of-type,
+#main #movies td span:last-of-type,
+#main #movies th span:last-of-type {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -322,7 +330,8 @@ index html*/
   left: 0;
 }
 
-#main #movies td span:last-of-type, #main #movies th span:last-of-type {
+#main #movies td span:last-of-type,
+#main #movies th span:last-of-type {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -615,7 +624,8 @@ index html*/
   width: 80px;
 }
 
-#links>div>ul.main_links_list>li:nth-child(4)>div.links_logo>img, #links>div>ul.main_links_list>li:nth-child(6)>div.links_logo>img {
+#links>div>ul.main_links_list>li:nth-child(4)>div.links_logo>img,
+#links>div>ul.main_links_list>li:nth-child(6)>div.links_logo>img {
   width: 120px !important;
 }
 
@@ -715,7 +725,9 @@ index html*/
   margin: 5px;
 }
 
-#main #contact form>div>input, #main #contact form>div>select, #main #contact form>div>textarea {
+#main #contact form>div>input,
+#main #contact form>div>select,
+#main #contact form>div>textarea {
   background-color: #dddddd2c;
   border: none;
   outline-color: red;
@@ -727,7 +739,8 @@ index html*/
   color: white;
 }
 
-#main #contact form>div>input, #main #contact form>div>select {
+#main #contact form>div>input,
+#main #contact form>div>select {
   height: 40px;
   padding: 0;
   padding-left: 10px;
@@ -805,46 +818,66 @@ index html*/
   #main #about_me {
     flex-direction: column;
   }
+
   #main #about_me .about_me_top img {
     width: 100%;
   }
-  #main #about_me .about_me_bottom h2, #main #about_me .about_me_bottom h1 {
+
+  #main #about_me .about_me_bottom h2,
+  #main #about_me .about_me_bottom h1 {
     font-size: 20px;
   }
+
   #main #about_me .about_me_bottom p {
     font-size: 12px;
   }
-  #main #about_me .about_me_top, #main #about_me .about_me_bottom {
+
+  #main #about_me .about_me_top,
+  #main #about_me .about_me_bottom {
     width: 100%;
   }
-  #main #contact, #main #links {
+
+  #main #contact,
+  #main #links {
     justify-content: flex-start;
   }
-  #main #contact form, #main #movies table, #main #links .links_holder {
+
+  #main #contact form,
+  #main #movies table,
+  #main #links .links_holder {
     width: 85%;
   }
+
   #main #links ul.main_links_list>li:hover {
     height: 200px;
   }
-  #main #links ul.main_links_list>li, #main #links .links_body .links_body_text {
+
+  #main #links ul.main_links_list>li,
+  #main #links .links_body .links_body_text {
     height: 100px;
   }
+
   #main #links .links_body .links_body_text h2 {
     font-size: 15px;
   }
+
   #main #links .links_body .links_body_text p {
     font-size: 10px;
   }
+
   #main #links .links_body ul li {
     font-size: 12px;
   }
+
   #main #links ul.main_links_list li .links_logo img {
     width: 55px;
     max-width: 90%;
   }
+
   #main #links ul.main_links_list li .links_body {
     flex-grow: 8;
   }
+
   #main .body {
     padding-top: 50px
   }
@@ -854,45 +887,61 @@ index html*/
   #main .header_top h3 {
     font-size: 20px;
   }
+
   #main .header_bottom ul li span.active_span {
     width: 20%;
   }
+
   #main .header_bottom ul li:hover span {
     width: 20%;
   }
+
   #main .header .header_bottom {
     top: -200px;
   }
+
   #main .header:hover .header_bottom {
     height: 300px;
   }
+
   #main .header_bottom ul {
     flex-direction: column;
   }
-  #main #contact form, #main #movies table, #main #links .links_holder {
+
+  #main #contact form,
+  #main #movies table,
+  #main #links .links_holder {
     width: 95%;
   }
+
   #main #links {
     padding-top: 0;
   }
+
   #main #contact form>div {
     width: 90%;
   }
-  #main #movies td, #main #movies th {
+
+  #main #movies td,
+  #main #movies th {
     height: 40px;
     font-size: 12px;
     font-weight: 100 !important;
   }
+
   #main #movies td:first-child {
     height: 95px;
   }
+
   #main #movies td:first-child span:last-of-type {
     font-size: 10px !important;
     font-weight: 100 !important;
   }
+
   #main #movies td span:last-of-type {
     padding: 5px;
   }
+
   #main #movies td {
     overflow-y: scroll;
   }
