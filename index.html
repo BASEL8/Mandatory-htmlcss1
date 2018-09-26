@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="EC frontend Labb 1">
+  <meta name="keywords" content="HTML,CSS,about me,portfolio template">
+  <meta name="author" content="Basel Munawwar">
+  <meta property="og:image" content="/img/favIcon.png">
+  <meta property="og:description" content="EC frontend Labb 1">
+  <meta property="og:title" content="Mandatory HTML CSS 1">
+  <meta name="twitter:title" content="Mandatory HTML CSS 1">
+  <link rel="shortcut icon" href="/img/favIcon.png" type="image/x-icon">
+  <link rel="stylesheet" type="text/css" href="//www.fontstatic.com/f=rabat,arabswell-1" />
+  <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great" rel="stylesheet">
+  <title>Mandatory HTML CSS 1</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="index_body">
+  <div id="main">
+    <div class="header shadow_1">
+      <div class="header_top">
+        <h3>Mandatory HTML CSS 1</h3>
+      </div>
+      <div class="header_bottom">
+        <ul class="shadow_1">
+          <li><a href="#">Home</a><span class="active_span"></span></li>
+          <li><a href="/pages/about.html">About Me</a><span></span></li>
+          <li><a href="/pages/movies.html">Movies</a><span></span></li>
+          <li><a href="/pages/links.html">Links</a><span></span></li>
+          <li><a href="/pages/contact.html">Contact</a><span></span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="body">
+      <div class="body_top">
+        <h1>مرحبا</h1>
+        <div class="type-wrap">
+          <div id="typed-strings">
+            <p>Välkommen </p>
+            <p>Приємаєме</p>
+            <p>ようこそ</p>
+            <p>Bienvenido</p>
+            <p>स्वागत</p>
+            <p>Hoş geldin</p>
+            <p>ሠላም</p>
+            <p>Ласкаво просимо</p>
+            <p>Добродошли </p>
+          </div>
+          <span id="typed" style="white-space:pre;"></span>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <p>Bas3l</p>
+    </div>
+  </div>
+  <script src="js/plugins/plugins.js"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js'></script>
+  <script src="js/main.js"></script>
+  <script>
+    var typed = new Typed("#typed", {
+      stringsElement: '#typed-strings',
+      typeSpeed: 60,
+      backSpeed: 30,
+      backDelay: 800,
+      startDelay: 100,
+      loop: true
+    });
+  </script>
+</body>
+
+</html>
