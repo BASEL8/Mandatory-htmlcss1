@@ -38,6 +38,8 @@ body {
   background-color: #253f4a;
   position: relative;
   z-index: 9999;
+  -webkit-box-flex: 0;
+  -ms-flex: none;
   flex: none;
 }
 
@@ -164,6 +166,8 @@ body {
   -ms-flex-pack: center;
   justify-content: center;
   overflow: scroll;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 0 auto;
   flex: 1 0 auto;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -353,7 +357,11 @@ index html*/
 }
 
 #main #movies td:first-child span:last-of-type {
+  -webkit-box-align: start;
+  -ms-flex-align: start;
   align-items: flex-start;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
   justify-content: flex-start;
   padding: 10px;
   color: white !important;
@@ -430,12 +438,16 @@ index html*/
   -ms-transform: translateY(-50%) translateX(-50%);
   transform: translateY(-50%) translateX(-50%);
   z-index: 999;
+  -webkit-transition: all .2s;
+  -o-transition: all .2s;
   transition: all .2s;
 }
 
 #main #movies td:first-child span:first-of-type:hover {
   height: 60px;
   width: 60px;
+  -webkit-transition: all .2s;
+  -o-transition: all .2s;
   transition: all .2s;
 }
 
@@ -688,6 +700,8 @@ index html*/
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
   flex-grow: 1;
 }
 
@@ -707,6 +721,9 @@ index html*/
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 1)));
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 1));
+  background: -o-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 1));
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 1));
   background-position: center;
   background-size: cover;
@@ -793,12 +810,19 @@ index html*/
   min-height: 7vh;
   width: 100%;
   background-color: #253f4a;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
   flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   font-family: 'Notable', sans-serif;
-  text-
 }
 
 /*my classes*/
@@ -816,6 +840,9 @@ index html*/
 
 @media screen and (max-width: 700px) {
   #main #about_me {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
   }
 
@@ -839,6 +866,8 @@ index html*/
 
   #main #contact,
   #main #links {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
     justify-content: flex-start;
   }
 
@@ -875,6 +904,8 @@ index html*/
   }
 
   #main #links ul.main_links_list li .links_body {
+    -webkit-box-flex: 8;
+    -ms-flex-positive: 8;
     flex-grow: 8;
   }
 
@@ -905,6 +936,9 @@ index html*/
   }
 
   #main .header_bottom ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
   }
 
