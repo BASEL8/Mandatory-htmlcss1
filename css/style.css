@@ -13,7 +13,11 @@ body {
   text-align: center;
   color: white;
   font-family: 'Open Sans', sans-serif;
-  background-color: black,
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)), url('../img/cat.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: black;
 }
 
 #main {
@@ -35,7 +39,6 @@ body {
 
 #main .header {
   width: 100%;
-  background-color: #253f4a;
   position: relative;
   z-index: 9999;
   -webkit-box-flex: 0;
@@ -56,7 +59,6 @@ body {
   -ms-flex-align: center;
   align-items: center;
   z-index: 9999;
-  background-color: #253f4a;
   position: relative;
 }
 
@@ -67,7 +69,6 @@ body {
 
 #main .header_bottom {
   width: 100%;
-  background-color: #253f4a;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -185,10 +186,6 @@ body {
 /*
 index html*/
 
-.index_body {
-  background: black;
-  color: white;
-}
 
 .type-wrap {
   line-height: 35px;
@@ -197,9 +194,6 @@ index html*/
 
 /* about me*/
 
-.about_me_body .body {
-  background: black;
-}
 
 #main #about_me {
   width: 100%;
@@ -251,13 +245,6 @@ index html*/
   align-items: flex-end;
 }
 
-#main #about_me .about_me_bottom h1 {
-  width: 200px;
-  -ms-flex-item-align: end;
-  align-self: flex-end;
-  font-size: 50px;
-  font-family: 'Notable', sans-serif;
-}
 
 #main #about_me .about_me_bottom h2 {
   width: 250px;
@@ -276,13 +263,6 @@ index html*/
 }
 
 /*movies*/
-
-.movies_body {
-  background: black;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
 
 #main #movies {
   color: white;
@@ -489,9 +469,6 @@ index html*/
 
 /*Links*/
 
-#links_body .body {
-  background-color: black;
-}
 
 #main #links {
   -webkit-box-flex: 1;
@@ -680,9 +657,7 @@ index html*/
 
 /*contact*/
 
-#contact_body .body {
-  background-color: black;
-}
+
 
 #main #contact {
   height: 100%;
@@ -787,7 +762,7 @@ index html*/
   padding-bottom: 10px;
 }
 
-#main #contact div>input[type='submit'] {
+#main #contact div>input[value='Submit'] {
   -ms-flex-item-align: center;
   -ms-grid-row-align: center;
   align-self: center;
@@ -809,16 +784,16 @@ index html*/
 #main .footer {
   min-height: 7vh;
   width: 100%;
-  background-color: #253f4a;
+  padding-left: 15px;
   -webkit-box-flex: 1;
   -ms-flex: 1;
   flex: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -838,6 +813,18 @@ index html*/
   }
 }
 
+@media screen and (max-height: 600px) {
+  #main .footer {
+    min-height: 50px;
+  }
+}
+
+@media screen and (min-height: 1000px) {
+  #main .footer {
+    min-height: 9vh;
+  }
+}
+
 @media screen and (max-width: 700px) {
   #main #about_me {
     -webkit-box-orient: vertical;
@@ -850,8 +837,7 @@ index html*/
     width: 100%;
   }
 
-  #main #about_me .about_me_bottom h2,
-  #main #about_me .about_me_bottom h1 {
+  #main #about_me .about_me_bottom h2 {
     font-size: 20px;
   }
 
@@ -915,6 +901,12 @@ index html*/
 }
 
 @media screen and (max-width: 600px) {
+
+  #main .header_top,
+  #main .header_bottom {
+    background: black;
+  }
+
   #main .header_top h3 {
     font-size: 20px;
   }
